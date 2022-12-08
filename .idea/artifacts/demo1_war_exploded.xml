@@ -1,0 +1,43 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-war" name="demo1:war exploded">
+    <output-path>$PROJECT_DIR$/target/demo1-1.0-SNAPSHOT</output-path>
+    <properties id="maven-jee-properties">
+      <options>
+        <exploded>true</exploded>
+        <module>demo1</module>
+        <packaging>war</packaging>
+      </options>
+    </properties>
+    <root id="root">
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="module-output" name="demo1" />
+        </element>
+        <element id="directory" name="lib">
+          <element id="library" level="project" name="Maven: mysql:mysql-connector-java:8.0.30" />
+          <element id="library" level="project" name="Maven: com.google.protobuf:protobuf-java:3.19.4" />
+          <element id="library" level="project" name="Maven: org.primefaces:primefaces:6.2" />
+          <element id="library" level="project" name="Maven: org.glassfish.corba:glassfish-corba-omgapi:4.2.1" />
+          <element id="library" level="project" name="Maven: org.apache.logging.log4j:log4j-core:2.19.0" />
+          <element id="library" level="project" name="Maven: org.apache.logging.log4j:log4j-api:2.19.0" />
+          <element id="library" level="project" name="Maven: javax.servlet.jsp.jstl:jstl-api:1.2" />
+          <element id="library" level="project" name="Maven: javax.servlet.jsp:jsp-api:2.1" />
+          <element id="library" level="project" name="Maven: javax.servlet:jstl:1.2" />
+          <element id="library" level="project" name="Maven: javax.mail:mail:1.4" />
+          <element id="library" level="project" name="Maven: javax.activation:activation:1.1" />
+          <element id="library" level="project" name="Maven: taglibs:standard:1.1.2" />
+          <element id="library" level="project" name="Maven: org.mockito:mockito-core:3.12.4" />
+          <element id="library" level="project" name="Maven: net.bytebuddy:byte-buddy:1.11.13" />
+          <element id="library" level="project" name="Maven: net.bytebuddy:byte-buddy-agent:1.11.13" />
+          <element id="library" level="project" name="Maven: org.objenesis:objenesis:3.2" />
+          <element id="library" level="project" name="Maven: org.mockito:mockito-inline:3.12.4" />
+          <element id="library" level="project" name="Maven: log4j:log4j:1.2.12" />
+        </element>
+      </element>
+      <element id="directory" name="META-INF">
+        <element id="file-copy" path="$PROJECT_DIR$/target/demo1-1.0-SNAPSHOT/META-INF/MANIFEST.MF" />
+      </element>
+      <element id="javaee-facet-resources" facet="demo1/web/Web" />
+    </root>
+  </artifact>
+</component>

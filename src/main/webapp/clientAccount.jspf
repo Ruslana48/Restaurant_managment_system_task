@@ -1,0 +1,44 @@
+<%@ page import="entity.Dish" %>
+<%@ page import="mysql.ReceiptDaoSql" %>
+<%@ page import="java.util.List" %>
+<%@ page import="entity.Order" %>
+<%@ page import="entity.Client" %>
+<%@ page import="dao.DAO" %>
+<title>Orders</title>
+<%List<Order> orders= (List<Order>) request.getSession().getAttribute("clientOrdersList");%>
+<div class="dc_container">
+    <table class="table table-striped">
+        <thead>
+        <tr>
+            <th scope="col">OrderId</th>
+            <th scope="col">Status</th>
+            <th scope="col">Date of order</th>
+            <th scope="col">Dishes</th>
+            <th scope="col">Total</th>
+        </tr>
+        </thead>
+        <tbody>
+        <%
+            if (!orders.isEmpty()){
+                for (Order order:orders) {%>
+        <tr>
+            <td><p><%=order.getId()%></p></td>
+            <td><p><%=order.getStatus()%></p></td>
+            <td><p><%=order.getCreateDate()%></p></td>
+            <td><%
+                ReceiptDaoSql rds=new ReceiptDaoSql();
+                List<Dish> allDishes=rds.getAllOrderDishes(order.getId());
+                for (Dish d:allDishes) {
+            %>
+                <p><%=d.getName()%>: <%=d.getPrice()%>$</p>
+                <%
+                    }
+                %></td>
+            <td><p><%=order.getTotal()%>$</p></td>
+        </tr>
+        <%}
+        }
+        %>
+        </tbody>
+    </table>
+</div>
