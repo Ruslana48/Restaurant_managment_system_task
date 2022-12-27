@@ -76,3 +76,7 @@
 ![зображення](https://user-images.githubusercontent.com/85941909/206450922-84e18e2e-8802-434f-8026-f9aafc4ad3b6.png)
 ![зображення](https://user-images.githubusercontent.com/85941909/206451024-3b4ac1dc-40c6-42bf-879b-5524d6dbe4aa.png)
 ![зображення](https://user-images.githubusercontent.com/85941909/206451744-7bba8042-ff92-4527-b93b-8a0c5c38d379.png)
+
+## Test Coverage (JACOCO plugin)
+![зображення](https://user-images.githubusercontent.com/85941909/209723614-066e70b7-28c1-4ef2-9617-b31634a61f6b.png)
+
